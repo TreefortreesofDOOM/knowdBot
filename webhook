@@ -1,4 +1,4 @@
-app.get('/webhook', function(req, res) {
+app.get('/knowdBot', function(req, res) {
   if (req.query['hub.mode'] === 'subscribe' &&
       req.query['hub.verify_token'] === <Success_is_sweeter_than_warm_milk>) {
     console.log("Validating webhook");
