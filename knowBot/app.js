@@ -1,3 +1,11 @@
+var express = require('express');
+var bodyParser = require('body-parser');
+
+var app = express();
+
+var jsonParser = bodyParser.json();
+var urlencodedParser = bodyParser.urlencoded({extended: false});
+
 app.get('/webhook', function(req, res) {
   if (req.query['hub.mode'] === 'subscribe' &&
       req.query['hub.verify_token'] === Success_is_sweeter_than_warm_milk) {
